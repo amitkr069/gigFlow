@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gig Worker Sign-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Join as a Gig Worker</h2>
+    <form id="signupForm">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="skill">Skill Category *</label>
+      <select id="skill" name="skill" required>
+        <option value="">-- Select Skill --</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Content Writing">Content Writing</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Video Editing">Video Editing</option>
+      </select>
+
+      <label for="portfolio">Portfolio Link</label>
+      <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" />
+
+      <button type="submit">Sign Up</button>
+      <div class="confirmation" id="confirmationMessage">Thank you for signing up!</div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
